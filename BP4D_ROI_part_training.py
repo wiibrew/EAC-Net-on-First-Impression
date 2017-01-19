@@ -66,7 +66,7 @@ def build_model():
     return net
 
 
-BATCH_SIZE = 50
+BATCH_SIZE = 25
 
 net = build_model()
 
