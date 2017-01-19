@@ -4,8 +4,6 @@ import numpy as np
 import theano
 import theano.tensor as T
 import lasagne
-
-
 import skimage.transform
 import sklearn.cross_validation
 import pickle
@@ -25,7 +23,6 @@ from lasagne.objectives import squared_error
 
 import get_bp4d_2dfeat
 import get_atten_map
-
 IM_SIZE=224
 X_sym = T.tensor4()
 y_sym = T.tensor4()
@@ -82,7 +79,6 @@ lasagne.layers.set_all_param_values(net['real_out'], param_values)
 
 prediction = lasagne.layers.get_output(net['real_out'], X_sym)
 
-print 'successfully...'
 
 
 
